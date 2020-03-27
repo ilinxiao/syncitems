@@ -10,7 +10,7 @@
 
 class JobStatus(IntEnum):
     Working = (0,)  # 工作中
-    Leave = (1,)  # 离职
+    Leave = (1,)  # 离职 本人现在离职中，欢迎骚扰
     # 暴力中文 = 2
 ```
 
@@ -99,6 +99,26 @@ app.blueprint(bp)
 ```
 {"Working":0,"Leave":1}
 ```
+
+#### 使用方式：
+
+1. 确保已安装pipenv.
+```Shell
+pip install pipenv
+```
+2. 安装依赖包。
+```python
+pipenv install
+```
+3. 进入环境并运行。
+```
+pipenv shell
+```
+4. 运行。
+```
+python  main.py
+```
+
 #### 方案的好处：
 最低成本的解决了选项同步的问题。
 
