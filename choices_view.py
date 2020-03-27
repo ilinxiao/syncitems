@@ -27,7 +27,7 @@ def choices_list(request: Request, enum_name, *args):
     :param request: 请求
     :param enum_name: 枚举类名称
     :param args:
-    :return: dict
+    :return: response(json)
     """
     cls_path = ENUM_CHOICES.get(enum_name, None)
     if cls_path is None:
